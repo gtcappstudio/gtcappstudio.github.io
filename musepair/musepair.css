@@ -1,0 +1,18 @@
+@import url("../styles.css");
+:root { color-scheme: light; --bg:#FBF8F3; --surface:#fffdfa; --text:#24131E; --muted:#6c5663; --brand:#4C1534; --accent:#CF7580; --line:#e6d9df; font-family:"Avenir Next",Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+h1,h2 { font-family:Didot,"Bodoni 72",Georgia,serif; font-weight:400; letter-spacing:-.025em; }
+nav .app-icon { width:42px; height:42px; border-radius:10px; }
+.intro { padding:58px 0 32px; max-width:760px; }
+.intro h1 { font-size:clamp(3rem,7vw,5rem); line-height:1.07; }
+.intro .lead { max-width:650px; }
+.screenshots { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; padding:20px 0 48px; }
+figure { margin:0; min-width:0; }
+figure img { display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:22px; box-shadow:0 12px 30px #4c153414; }
+figcaption { margin-top:16px; font-size:1rem; }
+figcaption strong { display:block; font-size:1.12rem; }
+.beta-note { padding:24px 0 52px; max-width:760px; }
+.eyebrow { font-size:.875rem; }
+a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
+@media(max-width:720px) { .screenshots { grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; } .screenshots figure:last-child { grid-column:1/-1; width:calc(50% - 9px); margin:auto; } }
+@media(max-width:440px) { .screenshots { grid-template-columns:1fr; } .screenshots figure,.screenshots figure:last-child { width:min(100%,320px); margin:auto; grid-column:auto; } .links { gap:12px; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
